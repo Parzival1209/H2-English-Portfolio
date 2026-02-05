@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2 English Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="book-container">
+        <button class="page-turn" id="prevPage" title="Previous Page">◀</button>
+        <div class="book">
+            <div class="page left-page">
+                <div class="page-number">1</div>
+                <div class="page-content"></div>
+            </div>
+            <div class="page right-page">
+                <div class="page-number">2</div>
+                <div class="page-content"></div>
+            </div>
+        </div>
+        <button class="page-turn" id="nextPage" title="Next Page">▶</button>
+    </div>
+
+    <div class="book-container" style="pointer-events: none; visibility: hidden;">
+        <button class="page-turn" style="pointer-events: none; visibility: hidden;">◀</button>
+        <div class="book" style="pointer-events: none; visibility: hidden;">
+            <div id="page-measurer" class="page" style="pointer-events: none; visibility: hidden;">
+                <div class="page-content"></div>
+            </div>
+            <div class="page" style="pointer-events: none; visibility: hidden;"></div>
+        </div>
+        <button class="page-turn" style="pointer-events: none; visibility: hidden;">▶</button>
+    </div>
+
+    <div id="book-source" hidden>
+        <img src="./Duncton Wood Front Cover.jpg" id="front-cover">
+
+        <h1>A 'Novel' Problem</h1>
+
+        <p>
+            This is <strong>Kai Yaron's</strong> H2 English Portfolio for the unit:
+            <mark>A 'Novel' Problem.</mark> The Portfolio uses a reading theme
+            inspired by <em>The Duncton Chronicles</em> by William Horwood.
+            The reading theme is made to look and feel like an old,
+            well-used book, while having some elements that fit the
+            setting of The Duncton Chronicles (e.g. links, highlights).
+        </p>
+
+        <hr>
+
+        <h2>Book, Sources, and Information</h2>
+
+        <p>
+            The book I have chosen to read is <u>Duncton Wood,</u> the
+            first book in The Duncton Chronicles.
+            <ul>
+                <li>This is a link to my lit circle's
+                    <a href="https://docs.google.com/document/d/1Ph-0WKknO6tAVHI_vnQfWD6Y9DwDndhpwtKqJNiW9_Q/edit?usp=sharing" target="_blank">
+                        reading plan
+                    </a>document.
+                </li>
+                <li>This is a link to a
+                    <a href="https://www.williamhorwood.co.uk/book/duncton-wood/" target="_blank">
+                        website
+                    </a>that's about Duncton Wood.
+                </li>
+                <li>This is a link to a
+                    <a href="https://chatgpt.com/share/695f1cbb-df60-8008-8911-3b30a6dbff9f" target="_blank">
+                        ChatGPT chat
+                    </a>about Duncton Wood.
+                </li>
+            </ul>
+        </p>
+
+        <blockquote>
+            If you go to the back cover of the book, you will find
+            place to add your <a id="comment-link">comments.</a>
+        </blockquote>
+
+        <!-- Back Cover -->
+        <h1>Comments</h1>
+
+        <form id="comment-form">
+            <label for="comment-form-name">Enter your name here:</label>
+            <input id="comment-form-name" placeholder="Kai/Kai Yaron" type="text" required>
+
+            <label for="comment-form-comment">Enter your comment here:</label>
+            <input id="comment-form-comment" placeholder="This is a comment." type="text" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="comment-form-message"></p>
+
+        <hr style="margin: 1.625rem;">
+
+        <p>
+            You can view all comments
+            <a href="https://script.google.com/macros/s/AKfycby7VCOZG2I9tH-2YkP2sveTQfUoI45Ski26tgNKYj0BYLDgj2e8ljP_txmo5sDDYRnllw/exec" target="_blank">
+                here.
+            </a>
+        </p>
+    </div>
+    <script src="./index.js" defer></script>
+</body>
+</html>
