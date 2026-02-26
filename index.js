@@ -301,6 +301,8 @@ function getClickedLinks() {
 function getLinkKey(link) {
     return link.getAttribute("href")
         ? "href:" + link.getAttribute("href")
+        : link.getAttribute("id")
+        ? "id:" + link.getAttribute("id")
         : "text:" + link.textContent.trim();
 }
 
