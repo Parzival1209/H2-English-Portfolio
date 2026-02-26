@@ -156,7 +156,14 @@ body {
     flex-direction: column;
 }
 
-/* ===== Headings ===== */
+/* ===== Coming Soon ===== */
+.coming-soon {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Main Headings (h1-h3) ===== */
 h1, h2, h3 {
     color: #3f4a2c;
     font-weight: normal;
@@ -176,6 +183,35 @@ h2 {
 
 h3 {
     font-size: 1.3rem;
+}
+
+/* ===== Other Headings (h4-h5) ===== */
+h4, h5, h6 {
+    color: #3f4a2c;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+}
+
+h4 {
+    font-size: 1.15rem;
+    margin-top: 1.6rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1.5px solid #b8ae9c;
+}
+
+h5 {
+    font-size: 1rem;
+    margin-top: 1.3rem;
+    padding-left: 0.6rem;
+    border-left: 3px solid #b8ae9c;
+}
+
+h6 {
+    opacity: 0.95;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* ===== Paragraphs ===== */
@@ -245,14 +281,36 @@ h3 mark {
         0 0.45em 0.65em rgba(201, 209, 179, 0.4);
 }
 
-/* ===== Unordered List ===== */
-ul {
+h4 mark,
+h5 mark,
+h6 mark {
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 50%,
+        rgba(201, 209, 179, 0.3) 51%,
+        rgba(201, 209, 179, 0.6) 62%,
+        rgba(201, 209, 179, 0.8) 70%,
+        rgba(201, 209, 179, 0.75) 100%
+    );
+    box-shadow:
+        0 0.45em 0.65em rgba(201, 209, 179, 0.4);
+}
+
+/* ===== Unordered and Ordered Lists ===== */
+ul, ol {
     padding: 0;
     margin-left: 2.88rem;
 }
 
-ul li {
+ul hr, ol hr {
+    margin: 0;
+    margin-left: -2.88rem;
+}
+
+ul li, ol li {
     padding-left: 0;
+    border-bottom: 1.25px solid #b8ae9c;
 }
 
 /* ===== Horizontal Rule ===== */
